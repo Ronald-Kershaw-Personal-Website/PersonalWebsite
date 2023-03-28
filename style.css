@@ -1,1 +1,74 @@
 /*Create styles for the nav bar, background, text, and images*/
+/*# represents an id for one unique element*/
+/*. represents a class for multiple elements*/
+
+body {
+  background-color: mintcream;
+  max-width: 960px;
+
+  /* sit centrally within parent container
+  https://stackoverflow.com/questions/3170772/what-does-auto-do-in-margin-0-auto*/
+  margin: 0 auto;
+}
+
+img {
+  max-width: 960px;
+}
+
+section {
+  text-align: center;
+  padding: 5px;
+}
+
+blockquote {
+  font-size: 18px;
+}
+
+#navbar ul {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkgreen;
+  border-radius: 25px;
+}
+
+#navbar li {
+  float: left;
+  font-size: 20px;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: mediumseagreen;
+}
+
+.active {
+  background-color: green;
+}
+
+.align-left {
+  text-align: left;
+  border-style: solid;
+  border-color: black;
+  /*1px border on the bottom, to give some pseudo hr vibes*/
+  border-width: 0px 0px 1px 0px;
+}
+
+.float-pic {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  float: right;
+}
