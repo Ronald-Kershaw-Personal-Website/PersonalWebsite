@@ -7,17 +7,65 @@
     <meta name="author" content="Ronald Kershaw">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header should include the navbar and elements that are shared between each page -->
     <header>
-
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li style="float:right"><a href="#" onclick="popUpFunction()">Ronald Kershaw</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main should include content unique to this page-->
-    <!-- About Page should include a include your interests, and things you are good at, and in general you should pull back enough of the curtain into your life to interest a potential employer in you as a person. -->
+    <!-- About Page should include interests, hobbies, and things about your life -->
     <main>
-
+        <section class="align-left">
+            <h1>
+                Things I'm Into
+            </h1>
+        </section>
+        <section class="align-left">
+            <h2>
+                Health and Wellness
+                <img class="float-pic"
+                        src="https://cdn.britannica.com/87/138787-050-33727493/Belovezhskaya-Forest-Poland.jpg"
+                        alt="picture of a project">
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate, numquam sint suscipit nostrum temporibus expedita sequi doloribus aspernatur totam id. Non sunt veniam aperiam officiis consectetur sit et facere.
+            </p>
+        </section>
+        <section class="align-left">
+            <h2>
+                Table Tennis
+                <img class="float-pic"
+                        src="https://i0.wp.com/joolausa.com/wp-content/uploads/2020/02/53030_05.jpg?fit=1200%2C1200&ssl=1"
+                        alt="picture of a project">
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate, numquam sint suscipit nostrum temporibus expedita sequi doloribus aspernatur totam id. Non sunt veniam aperiam officiis consectetur sit et facere.
+            </p>
+        </section>
+        <section class="align-left">
+            <h2>
+                Video Games
+                <img class="float-pic"
+                        src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71r3BuKrYcL.jpg"
+                        alt="picture of a project">
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate, numquam sint suscipit nostrum temporibus expedita sequi doloribus aspernatur totam id. Non sunt veniam aperiam officiis consectetur sit et facere.
+            </p>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
