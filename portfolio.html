@@ -7,17 +7,83 @@
     <meta name="author" content="Ronald Kershaw">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header should include the navbar and elements that are shared between each page -->
     <header>
-
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li style="float:right"><a href="#" onclick="popUpFunction()">Ronald Kershaw</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main should include content unique to this page-->
-    <!-- Home Page should include a photo, a mission statement, and something that defines you (like a quote) -->
+    <!-- Portfolio Page should include the projects you have worked on. Include the name, a description, a screenshot, and a link to where it is located on the web -->
     <main>
+        <section class="align-left">
+            <h1>Things I've developed</h1>
+        </section>
+        <section class="align-left">
+            <h2>
+                Project 1
+                <!-- Let images also be links -->
+                <a href="https://wegotthiscovered.com/wp-content/uploads/2023/02/Baby_Yoda_eggs-copy.jpg?w=1200"><img class="float-pic"
+                        src="https://cdn.pixabay.com/photo/2014/10/05/19/02/binary-code-475664_960_720.jpg"
+                        alt="picture of a project">
+                </a>
+            </h2>
+            <p>
 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate, numquam sint suscipit
+                nostrum temporibus expedita sequi doloribus aspernatur totam id. Non sunt veniam aperiam officiis
+                consectetur sit et facere.
+                <br><br>
+                <a href="https://wegotthiscovered.com/wp-content/uploads/2023/02/Baby_Yoda_eggs-copy.jpg?w=1200">Click Here</a>
+            </p>
+        </section>
+        <section class="align-left">
+            <h2>
+                Project 2
+                <!-- Jumpscare anyone!? XD. Replace this with a real link later -->
+                <a href="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/01/clicker.jpg"><img class="float-pic"
+                        src="https://www.dictionary.com/e/wp-content/uploads/2017/03/software_1000x700.jpg"
+                        alt="picture of a project">
+                </a>
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate, numquam sint suscipit
+                nostrum temporibus expedita sequi doloribus aspernatur totam id. Non sunt veniam aperiam officiis
+                consectetur sit et facere.
+
+                <br><br>
+                <a href="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/01/clicker.jpg">Click Here</a>
+            </p>
+        </section>
+        <section class="align-left">
+            <h2>
+                Project 3
+                <a href="https://i.natgeofe.com/n/3c83c374-404c-48c9-98c9-edca3c5e41d7/12358493.jpg?w=1024&h=683"><img class="float-pic"
+                        src="https://www.thesoftwarereport.com/wp-content/uploads/2019/09/software2.jpeg"
+                        alt="picture of a project">
+                </a>
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, cupiditate, numquam sint suscipit
+                nostrum temporibus expedita sequi doloribus aspernatur totam id. Non sunt veniam aperiam officiis
+                consectetur sit et facere.
+
+                <br><br>
+                <a href="https://i.natgeofe.com/n/3c83c374-404c-48c9-98c9-edca3c5e41d7/12358493.jpg?w=1024&h=683">Click Here</a>
+            </p>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
