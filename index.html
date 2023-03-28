@@ -7,19 +7,55 @@
     <meta name="author" content="Ronald Kershaw">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header should include the navbar and elements that are shared between each page -->
+    <!-- Clicking on the name should activate some kind of javascript easter egg code like a popup dialog-->
     <header>
+        <nav id="navbar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
 
+                <!-- When the user clicks on the name, an alert message will appear -->
+                <li style="float:right"><a href="#" onclick="popUpFunction()">Ronald Kershaw</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main should include content unique to this page-->
     <!-- Home Page should include a photo, a mission statement, and something that defines you (like a quote) -->
     <main>
+        <!-- Mission Statement -->
+        <section>
+            <h1>My goal is to join a great tech company, develop amazing software, and continue to grow my technical
+                skillset</h1>
+        </section>
 
+        <!-- Photo -->
+        <section>
+            <img src="https://uploads-ssl.webflow.com/6320d50a472d7123344bfd02/63feb5d78544d856d7f2c310_lead-software-development-team.jpg"
+                alt="software development team fist bumping">
+        </section>
+
+        <!-- Quote -->
+        <section>
+            <figure>
+                <blockquote>
+                    "Instead of worrying about what you cannot control, shift your energy to what you can create."
+                </blockquote>
+                <figcaption>
+                    - Roy T. Bennett, The Light in the Heart
+                </figcaption>
+            </figure>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
