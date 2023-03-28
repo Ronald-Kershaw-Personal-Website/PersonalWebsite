@@ -1,5 +1,5 @@
 # Personal Website
 This is a simple personal website that showcases projects R-Kershaw has developed
 
-# Licensegit 
+# License 
 [MIT](https://choosealicense.com/licenses/mit/)
