@@ -1,6 +1,7 @@
 /*Create styles for the nav bar, background, text, and images*/
 /*# represents an id for one unique element*/
 /*. represents a class for multiple elements*/
+/*Use flexbox to chunk up the header and sections into columns*/
 
 body {
   background-color: mintcream;
@@ -15,7 +16,15 @@ img {
   max-width: 960px;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
+  display: flex;
+  flex-direction: column;
+  
   text-align: center;
   padding: 5px;
 }
@@ -25,11 +34,16 @@ blockquote {
 }
 
 #navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
   top: 0;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -38,7 +52,7 @@ blockquote {
 }
 
 #navbar li {
-  float: left;
+  display: inline-block;
   font-size: 20px;
 }
 
@@ -71,4 +85,9 @@ blockquote {
   height: 80px;
   padding: 5px;
   float: right;
+}
+
+/*float the name to the right*/
+.name {
+  margin-left: auto;
 }
