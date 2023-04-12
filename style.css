@@ -1,6 +1,7 @@
 /*Create styles for the nav bar, background, text, and images*/
 /*# represents an id for one unique element*/
 /*. represents a class for multiple elements*/
+/*Use flexbox to chunk up the header and sections into columns*/
 
 body {
   background-color: mintcream;
@@ -13,23 +14,45 @@ body {
 
 img {
   max-width: 960px;
+  border-radius: 25px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+
   text-align: center;
-  padding: 5px;
+  padding: 20px;
 }
 
 blockquote {
   font-size: 18px;
 }
 
+textarea{
+  min-width:440px; /*match the smallest screen size (taking padding into account 20 left + 20 right)*/
+  max-width:100%;
+  min-height:50px;
+  height:100%;
+  width:100%;
+}
+
 #navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
   top: 0;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -38,7 +61,7 @@ blockquote {
 }
 
 #navbar li {
-  float: left;
+  display: inline-block;
   font-size: 20px;
 }
 
@@ -60,15 +83,49 @@ blockquote {
 
 .align-left {
   text-align: left;
-  border-style: solid;
-  border-color: black;
-  /*1px border on the bottom, to give some pseudo hr vibes*/
-  border-width: 0px 0px 1px 0px;
 }
 
-.float-pic {
-  width: 80px;
-  height: 80px;
-  padding: 5px;
-  float: right;
+/*float the name to the right*/
+.name {
+  margin-left: auto;
+}
+
+/*divide the picture and text uniformly*/
+.section-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: left;
+  align-items: center;
+  gap: 10px;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+/*make the pictures smaller at different breakpoints*/
+@media screen and (max-width: 1680px),
+screen and (max-height: 1050px) {
+  .section-item img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 1024px),
+screen and (max-height: 768px) {
+  .section-item img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 480px),
+screen and (max-height: 320px) {
+  .section-item img {
+    width: 80px;
+    height: 80px;
+  }
 }
