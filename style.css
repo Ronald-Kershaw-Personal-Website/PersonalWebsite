@@ -34,6 +34,14 @@ blockquote {
   font-size: 18px;
 }
 
+textarea{
+  min-width:440px; /*match the smallest screen size (taking padding into account 20 left + 20 right)*/
+  max-width:100%;
+  min-height:50px;
+  height:100%;
+  width:100%;
+}
+
 #navbar ul {
   display: flex;
   flex-direction: row;
